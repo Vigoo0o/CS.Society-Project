@@ -2,6 +2,19 @@ body {
   font-family: "Work Sans", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Start Home Page */
+
+/* Start Navbar */
+
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+
 .login-btn {
   margin-left: 1rem;
 }
@@ -12,3 +25,128 @@ body {
     margin-right: 0;
   }
 }
+
+/* End Navbar */
+
+/* Start Landing */
+
+.landing {
+  padding-top: 60px;
+  /* padding-bottom: 60px; */
+}
+
+.landing .info h1 {
+  font-size: 100px;
+  font-weight: bold;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .landing .info h1 {
+    font-size: 80px;
+  }
+}
+
+.landing .info p {
+  font-size: 18px;
+  color: #777;
+}
+
+@media (max-width: 640px) {
+  .landing .info h1 {
+    font-size: 50px;
+  }
+  .landing .info p {
+    font-size: 16px;
+  }
+}
+
+/* End Landing */
+
+/* Start Articls */
+
+.articls {
+  padding-top: 30px;
+  /* padding-bottom: 30px; */
+}
+
+.articls .item {
+  border-bottom: 1px solid #777;
+}
+
+.articls .item span:first-child {
+  color: #333;
+  font-size: 24px;
+}
+
+.articls .item span:last-child {
+  color: #777;
+  font-size: 20px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.articls .item:hover span:last-child {
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .articls .item span:first-child {
+    font-size: 18px;
+  }
+  .articls .item span:last-child {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .articls .item {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+}
+
+/* End Articls */
+
+/* End Home Page */
+
+/* Start Login Page */
+
+.login-form {
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 576px) {
+  .login-form {
+    width: 300px;
+  }
+}
+
+/* End Login Page */
+
+/* Start Footer */
+
+footer div {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+}
+
+@media (max-width: 576px) {
+  footer div {
+    font-size: 18px;
+  }
+}
+
+footer {
+}
+
+/* End Footer */
