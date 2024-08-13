@@ -1,6 +1,8 @@
-function classToggle() {
-  let nav = document.querySelector("navbar-nav");
-  nav.classList.toggle("Navbar_ToggleShow");
-}
+// Dark Mode
 
-document.querySelector("navbar-toggler").addEventListener("click", classToggle);
+$(document).ready(function () {
+  $(".switch-mode").on("click", function () {
+    $("body").toggleClass("dark-mode");
+    $("nav, .landing, .articls, footer").toggleClass("dark-mode");
+  });
+});
