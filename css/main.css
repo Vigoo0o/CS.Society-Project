@@ -283,12 +283,13 @@ footer.dark-mode div {
 }
 
 .art .info p span,
-.art .info ul li span {
+.art .info ul li span,
+.art .info h2 span {
   color: #dc3545;
 }
 
 .art .info h2 {
-  font-size: 45px;
+  font-size: 35px;
   font-weight: 700;
   margin-bottom: 20px;
 }
@@ -302,6 +303,7 @@ footer.dark-mode div {
 
 .art .info .image {
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .art .info img {
@@ -309,11 +311,18 @@ footer.dark-mode div {
   max-width: 100%;
 }
 
+.art .info .code pre {
+  padding: 30px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
 .art .info .code {
-  background-color: #f8f9fa;
-  margin-bottom: 40px;
-  padding: 20px;
-  overflow: auto;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 .art .info .code code {
@@ -328,6 +337,7 @@ footer.dark-mode div {
 
 .art .info ul li {
   font-size: 22px;
+  line-height: 1.8;
 }
 
 .art .info ul li {
@@ -369,10 +379,6 @@ footer.dark-mode div {
 .art.dark-mode .info p,
 .art.dark-mode .info ul li {
   color: #d4d4d4;
-}
-
-.art.dark-mode .info .code {
-  background-color: #282a36;
 }
 
 .art.dark-mode .info .code code span {
