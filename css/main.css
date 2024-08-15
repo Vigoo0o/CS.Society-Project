@@ -341,3 +341,48 @@ footer.dark-mode div {
 }
 
 /* End Articles Pages At Dark-Mode */
+
+/* Start Articles pages compunant*/
+.customstyle {
+  background-color: #333;
+  color: #fff;
+  padding: 2px 5px;
+  border-radius: 5px;
+  font-family: "Courier New", Courier, monospace;
+}
+.customsp{
+  font-size: 98%;
+}
+.image-container {
+  width: 100%; 
+  max-width: 100vw;  
+  height: auto; 
+  padding: 20px;  
+  box-sizing: border-box;  
+   justify-content: center;
+} 
+.image-container img {
+  width: 100%;  
+  height: auto; 
+  display: block;
+  object-fit: cover;  
+  max-width: 100%;
+}
+/* End article Compunant */
+
+/* Start Articles Pages At Dark-Mode */
+.art.dark-mode .head-of-art .tags a {
+  background-color: #404040;
+}
+
+.art.dark-mode .head-of-art h1,
+.art.dark-mode .info h2,
+.art.dark-mode .info h4 {
+  color: white;
+}
+
+.art.dark-mode .head-of-art .tags li,
+.art.dark-mode .info p {
+  color: #d4d4d4;
+}
+/* End Articles Pages At Dark-Mode */
