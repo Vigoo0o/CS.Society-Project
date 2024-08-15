@@ -4,6 +4,12 @@
 
 body {
   font-family: "Work Sans", sans-serif;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -ms-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
 }
 
 a {
@@ -319,6 +325,19 @@ footer.dark-mode div {
 
 /* Start Articles Pages At Dark-Mode */
 
-/* Soon */
+.art.dark-mode .head-of-art .tags a {
+  background-color: #404040;
+}
+
+.art.dark-mode .head-of-art h1,
+.art.dark-mode .info h2,
+.art.dark-mode .info h3 {
+  color: white;
+}
+
+.art.dark-mode .head-of-art .tags a,
+.art.dark-mode .info p {
+  color: #d4d4d4;
+}
 
 /* End Articles Pages At Dark-Mode */
