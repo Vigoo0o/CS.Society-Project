@@ -282,7 +282,8 @@ footer.dark-mode div {
   margin-bottom: 50px;
 }
 
-.art .info p span {
+.art .info p span,
+.art .info ul li span {
   color: #dc3545;
 }
 
@@ -308,6 +309,32 @@ footer.dark-mode div {
   max-width: 100%;
 }
 
+.art .info .code {
+  background-color: #f8f9fa;
+  margin-bottom: 40px;
+  padding: 20px;
+  overflow: auto;
+}
+
+.art .info .code code {
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  width: fit-content;
+}
+
+.art .info ul {
+}
+
+.art .info ul li {
+  font-size: 22px;
+}
+
+.art .info ul li {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
 @media (max-width: 768px) {
   .art .info h2 {
     font-size: 32px;
@@ -318,6 +345,9 @@ footer.dark-mode div {
   }
   .art .info h3 {
     font-size: 22px;
+  }
+  .art .info ul li {
+    font-size: 19px;
   }
 }
 
@@ -336,8 +366,17 @@ footer.dark-mode div {
 }
 
 .art.dark-mode .head-of-art .tags a,
-.art.dark-mode .info p {
+.art.dark-mode .info p,
+.art.dark-mode .info ul li {
   color: #d4d4d4;
+}
+
+.art.dark-mode .info .code {
+  background-color: #282a36;
+}
+
+.art.dark-mode .info .code code span {
+  color: white;
 }
 
 /* End Articles Pages At Dark-Mode */
@@ -350,22 +389,22 @@ footer.dark-mode div {
   border-radius: 5px;
   font-family: "Courier New", Courier, monospace;
 }
-.customsp{
+.customsp {
   font-size: 98%;
 }
 .image-container {
-  width: 100%; 
-  max-width: 100vw;  
-  height: auto; 
-  padding: 20px;  
-  box-sizing: border-box;  
-   justify-content: center;
-} 
+  width: 100%;
+  max-width: 100vw;
+  height: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  justify-content: center;
+}
 .image-container img {
-  width: 100%;  
-  height: auto; 
+  width: 100%;
+  height: auto;
   display: block;
-  object-fit: cover;  
+  object-fit: cover;
   max-width: 100%;
 }
 /* End article Compunant */

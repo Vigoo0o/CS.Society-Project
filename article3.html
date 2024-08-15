@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Bootstrab files (Minified) -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css.map" />
+    <!-- Font Awesom File (Minified)-->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- Main Project Style sheet -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- Google Fonts Work Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Start Nav -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html"><\></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars bar-icon"></i>
+          <!-- <span class="navbar-toggler-icon"></span> -->
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Explore</a>
+            </li>
+          </ul>
+          <a class="login-btn btn btn-dark" href="login.html">Login</a>
+
+          <div class="switch-mode ms-lg-3">
+            <i class="fa-solid fa-circle-half-stroke fa-lg"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End Nav -->
+    <!-- Start  Artcil -->
+    <div class="art">
+      <div class="container">
+        <div class="head-of-art mt-5 mb-4">
+          <div class="tags">
+            <a class="pt-1 pb-1 pe-3 px-3" href="#">Web Development</a>
+          </div>
+          <h1 class="my-4">What's in a URL?</h1>
+          <span class="date d-block">December 12, 2022 </span>
+        </div>
+        <div class="info">
+          <p>
+            URLs are everywhere. We use them to access websites, send emails,
+            download files, and more. But what exactly is a URL and how does it
+            work? In this article, we will explore the anatomy of a URL, the
+            different types of URLs, how to encode and decode URLs, how to
+            design and debug URLs, and some security tips for using URLs.
+          </p>
+          <h2>What is a URL?</h2>
+          <p>
+            A URL (Uniform Resource Locator) is a string of characters that
+            identifies a resource on the Internet. A resource can be anything
+            that can be accessed online, such as a web page, an image, a video,
+            a document, etc.
+          </p>
+          <p>
+            A URL consists of two parts: a scheme and a path. The scheme
+            specifies the protocol or method of accessing the resource, such as
+            http, https, ftp, mailto, etc. The path specifies the location or
+            address of the resource on the server or network. For example, here
+            is a URL with these two parts
+          </p>
+          <div class="code">
+            <code>
+              <span>https://www.example.com/index.html</span>
+              <span>--^-- ---------^----------------</span>
+              <span
+                >scheme&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;path</span
+              >
+            </code>
+          </div>
+          <h2>Anatomy of a URL</h2>
+          <p>
+            A URL can have several components that provide additional
+            information about the resource or how to access it. These components
+            are separated by special characters called delimiters.
+          </p>
+          <div class="code">
+            <code>
+              <span
+                >scheme://[user:password@]host[:port]/path[?query][#fragment]</span
+              >
+            </code>
+          </div>
+          <ul>
+            <li>
+              The scheme is followed by a colon <span>:</span> and two slashes
+              <span>//</span>.
+            </li>
+            <li>
+              The user and password are optional and are used for authentication
+              purposes. They are separated by a colon <span>:</span> and
+              followed by an at sign <span>@</span>.
+            </li>
+            <li>
+              The host is the name or IP address of the server or network where
+              the resource is located. It can also include a subdomain or a
+              domain name.
+            </li>
+            <li>
+              The port is optional and specifies the port number on the server
+              where the resource can be accessed. It is preceded by a colon.
+            </li>
+            <li>
+              The path is the sequence of directories and files that lead to the
+              resource on the server. It is separated by slashes <span>/</span>.
+            </li>
+            <li>
+              The query is optional and contains additional parameters or data
+              that are sent to the server along with the request for
+              theresource. It is preceded by a question mark <span>?</span>.
+            </li>
+            <li>
+              The fragment is optional and identifies a specific part or section
+              of the resource. It is preceded by a hash sign <span>#</span>.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End Artcil -->
+    <!-- Start Footer -->
+    <footer>
+      <div class="container">
+        <div>© All rights reserved — CS.Society</div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/bootstrap.bundle.js.map"></script>
+    <!-- Jquery File (Minified) -->
+    <script src="./js/jquery.all.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
