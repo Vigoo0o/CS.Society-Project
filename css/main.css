@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Work Sans", sans-serif;
 }
@@ -10,6 +14,11 @@ a {
 /* Start Home Page */
 
 /* Start Navbar */
+
+.navbar .navbar-brand {
+  font-size: 35px;
+  font-weight: 900;
+}
 
 .navbar .bar-icon {
   font-size: 24px;
@@ -28,9 +37,6 @@ a {
     margin-left: 0;
     margin-right: 0;
   }
-}
-
-.switch-mode {
 }
 
 @media (max-width: 992px) {
@@ -162,14 +168,9 @@ footer div {
   }
 }
 
-footer {
-}
-
 /* End Footer */
 
-/* Dark-Mode */
-
-/* Start Nav at dark-mode */
+/* Start Home Page At Dark-Mode */
 
 body.dark-mode {
   background-color: #171717;
@@ -208,15 +209,9 @@ nav.dark-mode .login-btn {
   color: black;
 }
 
-/* End Nav at dark-mode */
-
-/* Start Landing at dark-mode */
-
 .landing.dark-mode h1 {
   color: white;
 }
-
-/* End Landing at dark-mode */
 
 .articls.dark-mode a span:first-child {
   color: white;
@@ -226,10 +221,104 @@ nav.dark-mode .login-btn {
   color: white;
 }
 
-/* Start Articls at dark-mode */
-
-/* Start Footer at dark-mode */
-
 footer.dark-mode div {
   color: white;
 }
+
+/* End Home Page At Dark-Mode */
+
+/* Start article Compunant */
+
+.art .head-of-art .tags {
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
+}
+
+.art .head-of-art .tags a {
+  display: inline-block;
+  background-color: #d4d4d4;
+  border-radius: 25px;
+  font-size: 15px;
+}
+
+.art .head-of-art h1 {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.art .head-of-art .date {
+  font-size: 20px;
+  color: #777;
+}
+
+@media (max-width: 768px) {
+  .art .head-of-art .tags {
+    flex-direction: column;
+  }
+  .art .head-of-art .tags a {
+    width: fit-content;
+  }
+  .art .head-of-art .tags a:first-of-type {
+    margin-bottom: 10px;
+  }
+  .art .head-of-art h1 {
+    font-size: 35px;
+  }
+  .art .head-of-art .date {
+    font-size: 19px;
+  }
+}
+
+.art .info p {
+  font-size: 22px;
+  line-height: 1.9;
+  margin-bottom: 50px;
+}
+
+.art .info p span {
+  color: #dc3545;
+}
+
+.art .info h2 {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.art .info h3 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  margin-top: 40px;
+}
+
+.art .info .image {
+  text-align: center;
+}
+
+.art .info img {
+  width: 800px;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .art .info h2 {
+    font-size: 32px;
+  }
+  .art .info p {
+    font-size: 19px;
+    line-height: 1.6;
+  }
+  .art .info h3 {
+    font-size: 22px;
+  }
+}
+
+/* End article Compunant */
+
+/* Start Articles Pages At Dark-Mode */
+
+/* Soon */
+
+/* End Articles Pages At Dark-Mode */
