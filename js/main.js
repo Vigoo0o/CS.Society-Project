@@ -8,6 +8,12 @@ function removeDarkModeClass() {
   $("nav, .landing, .articls, footer, .art").removeClass("dark-mode");
 }
 
+// document.body.style.backgroundColor = "#171717";
+
+// if (localStorage.getItem("dark-mode") === "on") {
+//   document.body.style.backgroundColor = "#171717";
+// }
+
 document.body.style.opacity = 1;
 
 $(document).ready(function () {
