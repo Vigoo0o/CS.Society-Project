@@ -268,7 +268,11 @@ footer.dark-mode div {
   -o-transition: 0.3s;
 }
 
-.art.art.dark-mode .head-of-art .date-and-auther .name:hover {
+.art .head-of-art .date-and-auther .name:hover {
+  color: #171717;
+}
+
+.art.dark-mode .head-of-art .date-and-auther .name:hover {
   color: #d4d4d4;
 }
 @media (max-width: 768px) {
