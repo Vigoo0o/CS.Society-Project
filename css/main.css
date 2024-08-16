@@ -279,7 +279,11 @@ footer.dark-mode div {
 .art .info p {
   font-size: 22px;
   line-height: 1.9;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
+}
+
+.art .info p.before-ul {
+  margin-bottom: 10px;
 }
 
 .art .info p span,
@@ -333,6 +337,7 @@ footer.dark-mode div {
 }
 
 .art .info ul {
+  margin-bottom: 40px;
 }
 
 .art .info ul li {
