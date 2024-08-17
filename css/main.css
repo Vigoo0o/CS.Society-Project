@@ -166,7 +166,7 @@ a {
   }
 }
 
-.login-form .submit-btn{
+.login-form .submit-btn {
   width: 100%;
 }
 
@@ -208,13 +208,15 @@ footer div {
   font-size: 15px;
 }
 
-.art .head-of-art h1 {
+.art .head-of-art h1,
+.explore .head-of-explore h1 {
   font-size: 60px;
   font-weight: bold;
 }
 
 .art .head-of-art .date-and-auther,
-.art .head-of-art .describtion {
+.art .head-of-art .describtion,
+.explore .head-of-explore .describtion {
   font-size: 20px;
   color: #777;
 }
@@ -345,3 +347,25 @@ footer div {
 }
 
 /* End article Compunant */
+
+/* Start Explore */
+
+.explore {
+  height: calc(100vh - 200px);
+}
+
+.explore .tags h2 {
+  font-size: 15px;
+}
+
+@media (max-width: 640px) {
+  .explore {
+    height: 100% !important;
+  }
+  .explore .tags div {
+    flex-direction: column;
+  }
+  .explore .tags div a {
+    text-align: start;
+  }
+}
