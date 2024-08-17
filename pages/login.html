@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../css/all.min.css" />
     <!-- Main Project Style sheet -->
     <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/dark-mode.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,6 +21,9 @@
   </head>
   <body>
     <form class="login-form">
+      <div class="logo">
+        <a class="navbar-brand" href="../index.html">&#60;\&#62;</a>
+      </div>
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Email address</label>
         <input
@@ -33,19 +37,23 @@
         </div>
       </div>
       <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <div class="label-par d-flex justify-content-between ">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <a class="text-primary" href="#">Forgit Password</a>
+        </div>
         <input
           type="password"
           class="form-control"
           id="exampleInputPassword1"
         />
+        
       </div>
       <div class="mb-3 form-check">
         <input type="checkbox" class="form-check-input" id="exampleCheck1" />
         <label class="form-check-label" for="exampleCheck1">Remember Me</label>
       </div>
-      <button type="submit" class="btn btn-primary mb-2">Submit</button>
-      <div>You Don't Have An Account? <a href="#">Sign Up</a></div>
+      <button type="submit" class="submit-btn btn btn-dark mb-3">Submit</button>
+      <div class="sign-up">New At CS.Society? <a class="text-primary" href="#">Sign Up</a></div>
     </form>
     <!-- Bootstrab js files -->
     <script src="../js/bootstrap.bundle.js"></script>

@@ -1,0 +1,112 @@
+/* Start Home Page At Dark-Mode */
+
+body.dark-mode {
+    background-color: #171717;
+  }
+  
+  nav.dark-mode {
+    color: #f5f5f5;
+  }
+  
+  nav.dark-mode .navbar-brand {
+    color: white;
+  }
+  
+  nav.dark-mode .navbar-toggler {
+    border-color: white;
+  }
+  
+  nav.dark-mode .bar-icon {
+    color: white;
+  }
+  
+  nav.dark-mode ul a.active {
+    color: white !important;
+  }
+  
+  nav.dark-mode ul a {
+    color: #a3a3a3;
+  }
+  
+  nav.dark-mode ul a:hover {
+    color: white;
+  }
+  
+  nav.dark-mode .login-btn {
+    background-color: white;
+    color: black;
+  }
+  
+  .landing.dark-mode h1 {
+    color: white;
+  }
+  
+  .articls.dark-mode a span:first-child {
+    color: white;
+  }
+  
+  .articls.dark-mode a:hover span:last-child {
+    color: white;
+  }
+  
+  footer.dark-mode div {
+    color: white;
+  }
+  
+  /* End Home Page At Dark-Mode */
+
+  /* Start Articles Pages At Dark-Mode */
+
+.art.dark-mode .head-of-art .tags a {
+    background-color: #404040;
+  }
+  
+  .art.dark-mode .head-of-art h1,
+  .art.dark-mode .info h2,
+  .art.dark-mode .info h3 {
+    color: white;
+  }
+  
+  .art.dark-mode .head-of-art .tags a,
+  .art.dark-mode .info p,
+  .art.dark-mode .info ul li {
+    color: #d4d4d4;
+  }
+  
+  .art.dark-mode .info .code code span {
+    color: white;
+  }
+
+  .art.dark-mode .head-of-art .tags li,
+  .art.dark-mode .info p {
+    color: #d4d4d4;
+  }
+  
+  /* End Articles Pages At Dark-Mode */
+
+  /* Start Login From At Dark-Mode */
+
+
+.login-form.dark-mode
+{
+  background-color: #171717;
+
+}
+.login-form.dark-mode,
+.login-form.dark-mode .form-text {
+  color: white;
+}
+
+.login-form.dark-mode .submit-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.login-form.dark-mode input {
+  border: none;
+}
+
+.login-form.dark-mode input:focus {
+  box-shadow: none;
+}
+/* End Login From At Dark-Mode */

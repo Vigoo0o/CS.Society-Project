@@ -1,11 +1,11 @@
 // Dark Mode
 function addDarkModeClass() {
   $("body").addClass("dark-mode");
-  $("nav, .landing, .articls, footer, .art").addClass("dark-mode");
+  $("nav, .landing, .articls, footer, .art, .login-form").addClass("dark-mode");
 }
 function removeDarkModeClass() {
   $("body").removeClass("dark-mode");
-  $("nav, .landing, .articls, footer, .art").removeClass("dark-mode");
+  $("nav, .landing, .articls, footer, .art, .login-form").removeClass("dark-mode");
 }
 
 // document.body.style.backgroundColor = "#171717";

@@ -21,7 +21,8 @@ a {
 
 /* Start Navbar */
 
-.navbar .navbar-brand {
+.navbar .navbar-brand,
+.login-form .logo a {
   font-size: 45px;
   font-weight: 900;
 }
@@ -149,12 +150,28 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #eee;
+  border-radius: 10px;
+}
+
+.login-form .logo {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 @media (max-width: 576px) {
   .login-form {
-    width: 300px;
+    width: calc(100% - 20px);
   }
+}
+
+.login-form .submit-btn{
+  width: 100%;
+}
+
+.login-form .text-primary {
+  font-size: 13px;
 }
 
 /* End Login Page */
@@ -175,63 +192,6 @@ footer div {
 }
 
 /* End Footer */
-
-/* Start Home Page At Dark-Mode */
-
-body.dark-mode {
-  background-color: #171717;
-}
-
-nav.dark-mode {
-  color: #f5f5f5;
-}
-
-nav.dark-mode .navbar-brand {
-  color: white;
-}
-
-nav.dark-mode .navbar-toggler {
-  border-color: white;
-}
-
-nav.dark-mode .bar-icon {
-  color: white;
-}
-
-nav.dark-mode ul a.active {
-  color: white !important;
-}
-
-nav.dark-mode ul a {
-  color: #a3a3a3;
-}
-
-nav.dark-mode ul a:hover {
-  color: white;
-}
-
-nav.dark-mode .login-btn {
-  background-color: white;
-  color: black;
-}
-
-.landing.dark-mode h1 {
-  color: white;
-}
-
-.articls.dark-mode a span:first-child {
-  color: white;
-}
-
-.articls.dark-mode a:hover span:last-child {
-  color: white;
-}
-
-footer.dark-mode div {
-  color: white;
-}
-
-/* End Home Page At Dark-Mode */
 
 /* Start article Compunant */
 
@@ -275,6 +235,7 @@ footer.dark-mode div {
 .art.dark-mode .head-of-art .date-and-auther .name:hover {
   color: #d4d4d4;
 }
+
 @media (max-width: 768px) {
   .art .head-of-art .tags {
     flex-direction: column;
@@ -384,72 +345,3 @@ footer.dark-mode div {
 }
 
 /* End article Compunant */
-
-/* Start Articles Pages At Dark-Mode */
-
-.art.dark-mode .head-of-art .tags a {
-  background-color: #404040;
-}
-
-.art.dark-mode .head-of-art h1,
-.art.dark-mode .info h2,
-.art.dark-mode .info h3 {
-  color: white;
-}
-
-.art.dark-mode .head-of-art .tags a,
-.art.dark-mode .info p,
-.art.dark-mode .info ul li {
-  color: #d4d4d4;
-}
-
-.art.dark-mode .info .code code span {
-  color: white;
-}
-
-/* End Articles Pages At Dark-Mode */
-
-/* Start Articles pages compunant*/
-.customstyle {
-  background-color: #333;
-  color: #fff;
-  padding: 2px 5px;
-  border-radius: 5px;
-  font-family: "Courier New", Courier, monospace;
-}
-.customsp {
-  font-size: 98%;
-}
-.image-container {
-  width: 100%;
-  max-width: 100vw;
-  height: auto;
-  padding: 20px;
-  box-sizing: border-box;
-  justify-content: center;
-}
-.image-container img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-  max-width: 100%;
-}
-/* End article Compunant */
-
-/* Start Articles Pages At Dark-Mode */
-.art.dark-mode .head-of-art .tags a {
-  background-color: #404040;
-}
-
-.art.dark-mode .head-of-art h1,
-.art.dark-mode .info h2,
-.art.dark-mode .info h4 {
-  color: white;
-}
-
-.art.dark-mode .head-of-art .tags li,
-.art.dark-mode .info p {
-  color: #d4d4d4;
-}
-/* End Articles Pages At Dark-Mode */
