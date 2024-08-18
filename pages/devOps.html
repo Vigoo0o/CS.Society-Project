@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>csSociety</title>
+    <title>Introduction To DNS</title>
     <!-- Bootstrab files (Minified) -->
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/bootstrap.min.css.map" />
@@ -12,6 +12,7 @@
     <!-- Main Project Style sheet -->
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/dark-mode.css" />
+
     <!-- Google Fonts Work Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,7 +22,7 @@
     />
   </head>
   <body>
-    <!-- Start Navbar -->
+    <!-- Start Nav -->
     <nav class="navbar navbar-expand-lg">
       <div class="container">
         <a class="navbar-brand" href="../index.html">&#60;\&#62;</a>
@@ -45,10 +46,10 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="./explore.html">Explore</a>
+              <a class="nav-link" href="#">Explore</a>
             </li>
           </ul>
-          <a class="login-btn btn btn-dark" href="./login.html">Login</a>
+          <a class="login-btn btn btn-dark" href="login.html">Login</a>
 
           <div class="switch-mode ms-lg-3">
             <i class="fa-solid fa-circle-half-stroke fa-lg"></i>
@@ -56,61 +57,24 @@
         </div>
       </div>
     </nav>
-    <!-- Start Navbar -->
-    <!-- Start Explore Body -->
-    <div class="explore">
+    <!-- End Nav -->
+    <div class="category">
       <div class="container">
-        <!-- head-of-explore shared styling with head-of-art -->
-        <div class="head-of-explore mt-5 mb-5">
-          <h1 class="">Explore</h1>
-          <p class="describtion">
-            Navigate your way through the guides and tutorials.
-          </p>
+        <div class="head mt-5 mb-4">
+          <h1 class="my-4">DevOps</h1>
+          <p class="discription">Explore our collection of DevOps articles.</p>
         </div>
-        <div class="tags">
-          <h2 class="">Guides by Tag</h2>
-          <div class="d-flex flex-wrap gap-2">
-            <a class="btn btn-light" href="../index.html">
-              All
-              <span>&#160;10</span>
-            </a>
-            <a class="btn btn-light d-block" href="./devOps.html">
-              DevOps
-              <span>&#160;1</span>
-            </a>
-            <a class="btn btn-light" href="#">
-              Linux
-              <span>&#160;1</span>
-            </a>
-            <a class="btn btn-light d-block" href="#">
-              C++
-              <span>&#160;1</span>
-            </a>
-            <a class="btn btn-light" href="#">
-              Git
-              <span>&#160;1</span>
-            </a>
-            <a class="btn btn-light d-block" href="#">
-              Web Development
-              <span>&#160;5</span>
-            </a>
-            <a class="btn btn-light d-block" href="#">
-              CSS
-              <span>&#160;1</span>
-            </a>
-            <a class="btn btn-light d-block" href="#">
-              Data Structures
-              <span>&#160;0</span>
-            </a>
-            <a class="btn btn-light d-block" href="#">
-              Career
-              <span>&#160;1</span>
-            </a>
-          </div>
+        <div class="all-articls">
+          <a
+            href="./pages/article6.html"
+            class="item d-flex justify-content-between align-items-center pt-3 pb-3"
+          >
+            <span class="title">Guide to Picking a Language for DevOps</span>
+            <span class="date">Jan 19, 2023</span>
+          </a>
         </div>
       </div>
     </div>
-    <!-- End Explore Body -->
     <!-- Start Footer -->
     <footer>
       <div class="container">
@@ -118,7 +82,6 @@
       </div>
     </footer>
     <!-- End Footer -->
-    <!-- Bootstrab js files -->
     <script src="../js/bootstrap.bundle.js"></script>
     <script src="../js/bootstrap.bundle.js.map"></script>
     <!-- Jquery File (Minified) -->

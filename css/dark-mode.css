@@ -37,16 +37,19 @@ nav.dark-mode .login-btn {
   color: black;
 }
 
-.landing.dark-mode h1 {
+.landing.dark-mode h1,
+.category.dark-mode h1 {
   color: white;
 }
 
-.articls.dark-mode a span:first-child {
-  color: white;
+.articls.dark-mode a span:first-child,
+.category.dark-mode a span:first-child {
+  color: white !important;
 }
 
-.articls.dark-mode a:hover span:last-child {
-  color: white;
+.articls.dark-mode a:hover span:last-child,
+.category.dark-mode a:hover span:last-child {
+  color: white !important;
 }
 
 footer.dark-mode div {
