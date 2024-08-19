@@ -217,7 +217,8 @@ footer div {
 
 .art .head-of-art h1,
 .explore .head-of-explore h1,
-.category .head h1 {
+.category .head h1,
+.learning-paths .head-of-learning-paths h1 {
   font-size: 60px;
   font-weight: bold;
 }
@@ -226,7 +227,8 @@ footer div {
 .art .head-of-art .date-and-auther,
 .art .head-of-art .describtion,
 .explore .head-of-explore .describtion,
-.category .head .discription {
+.category .head .discription,
+.learning-paths .head-of-learning-paths .description {
   font-size: 20px;
   color: #777;
 }
@@ -259,11 +261,13 @@ footer div {
     margin-bottom: 10px;
   }
   .art .head-of-art h1,
-  .category .head h1 {
+  .category .head h1,
+  .learning-paths .head-of-learning-paths h1 {
     font-size: 35px;
   }
-  .art .head-of-art .date-and-auther {
-    font-size: 19px;
+  .art .head-of-art .date-and-auther,
+  .learning-paths .head-of-learning-paths .description {
+    font-size: 18px !important;
   }
 }
 
@@ -379,4 +383,74 @@ footer div {
   .explore .tags div a {
     text-align: start;
   }
+}
+
+/* Lerning Paths */
+
+.learning-paths .tablist .item {
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.learning-paths .tablist .item:hover,
+.learning-paths .tablist .item.active {
+  background-color: #eeeff2;
+}
+
+.learning-paths .tablist .item.active {
+  font-weight: bold;
+  position: relative;
+}
+
+.learning-paths .tablist .item.active::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #a3ea2a;
+}
+
+@media (max-width: 576px) {
+  .learning-paths .tablist .item {
+    font-size: 15px;
+    padding: 10px 20px !important;
+  }
+}
+
+.learning-paths .paths {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.learning-paths .paths .path {
+  overflow: hidden;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: rgba(21, 28, 43, 0.07) 0px 3px 13px 0px;
+}
+
+.learning-paths .paths .path .image img {
+  max-width: 100%;
+}
+
+.learning-paths .paths .path .description {
+}
+
+.learning-paths .paths .path .description h2 {
+  font-size: 20px;
+}
+
+.learning-paths .paths .path .description p {
+  margin: 0;
+  font-size: 15px;
+  color: #777;
 }
