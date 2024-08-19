@@ -68,7 +68,8 @@ footer.dark-mode div {
 .art.dark-mode .info h2,
 .art.dark-mode .info h3,
 .explore.dark-mode .head-of-explore,
-.explore.dark-mode .tags h2 {
+.explore.dark-mode .tags h2,
+.learning-paths.dark-mode h1 {
   color: white;
 }
 
@@ -128,3 +129,15 @@ footer.dark-mode div {
 }
 
 /* Explore At Dark-Mode */
+
+/* Learnign Pathes At Dark-Mode */
+
+.learning-paths.dark-mode .tablist {
+  color: white;
+}
+
+.learning-paths.dark-mode .tablist .item {
+}
+
+.learning-paths.dark-mode .tablist .item.active {
+}

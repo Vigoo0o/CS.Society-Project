@@ -2,13 +2,13 @@
 function addDarkModeClass() {
   $("body").addClass("dark-mode");
   $(
-    "nav, .landing, .articls, footer, .art, .login-form, .explore, .category"
+    "nav, .landing, .articls, footer, .art, .login-form, .explore, .category, .learning-paths"
   ).addClass("dark-mode");
 }
 function removeDarkModeClass() {
   $("body").removeClass("dark-mode");
   $(
-    "nav, .landing, .articls, footer, .art, .login-form, .explore, .category"
+    "nav, .landing, .articls, footer, .art, .login-form, .explore, .category, .learning-paths"
   ).removeClass("dark-mode");
 }
 

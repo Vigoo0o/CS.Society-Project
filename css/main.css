@@ -387,6 +387,11 @@ footer div {
 
 /* Lerning Paths */
 
+.learning-paths .tablist {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
 .learning-paths .tablist .item {
   font-size: 20px;
   cursor: pointer;
