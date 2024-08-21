@@ -1,17 +1,26 @@
 $(document).ready(function () {
-  localStorage.setItem("articleCount", 0);
+  function updateArticlesCount(storageKey, className) {
+    // Initialize TagArts in localStorage if not already done
+    if (localStorage.getItem(storageKey) === null) {
+      localStorage.setItem(storageKey, 0);
+    }
 
-  // if for don't reset allArticles in every page when relode
-  if (localStorage.getItem("articleCount") == 0) {
-    let allArticles = document.querySelectorAll(".all-articls a").length;
-    localStorage.setItem("articleCount", allArticles);
-  } else {
-    let updateAllArticles = allArticles;
-    let getAllElementToCompaer =
-      document.querySelectorAll(".all-articls a").length;
+    let storedCount = parseInt(localStorage.getItem(storageKey), 10);
+    let currentCount = document.querySelectorAll(className).length;
 
-    if (getAllElementToCompaer > updateAllArticles) {
-      localStorage.setItem("articleCount", getAllElementToCompaer);
+    // Update gitArts in localStorage if there are more articles
+    if (currentCount > storedCount) {
+      localStorage.setItem(storageKey, currentCount);
+    } else {
+      localStorage.setItem(storageKey, currentCount);
     }
   }
+  updateArticlesCount("articleCount", ".all-articls a");
+  updateArticlesCount("cppArts", ".all-articls a.cpp");
+  updateArticlesCount("linuxArts", ".all-articls a.linux");
+  updateArticlesCount("devOpsArts", ".all-articls a.devOps");
+  updateArticlesCount("gitArts", ".all-articls a.git");
+  updateArticlesCount("webDevArts", ".all-articls a.webDev");
+  updateArticlesCount("cssArts", ".all-articls a.css");
+  updateArticlesCount("careerArts", ".all-articls a.career");
 });
