@@ -1,5 +1,5 @@
 let switchSpans = document.querySelectorAll(".tablist span");
-let paths = document.querySelectorAll(".paths .path");
+let paths = document.querySelectorAll(".paths a");
 
 switchSpans.forEach((span) => {
   span.addEventListener("click", removeActive);

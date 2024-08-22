@@ -2,21 +2,15 @@
 function addDarkModeClass() {
   $("body").addClass("dark-mode");
   $(
-    "nav, .landing, .articls, footer, .art, .login-form, .explore, .category, .learning-paths"
+    "nav, .landing, .articls, footer, .art, .login-form, .explore, .category, .learning-paths, .path"
   ).addClass("dark-mode");
 }
 function removeDarkModeClass() {
   $("body").removeClass("dark-mode");
   $(
-    "nav, .landing, .articls, footer, .art, .login-form, .explore, .category, .learning-paths"
+    "nav, .landing, .articls, footer, .art, .login-form, .explore, .category, .learning-paths, .path"
   ).removeClass("dark-mode");
 }
-
-// document.body.style.backgroundColor = "#171717";
-
-// if (localStorage.getItem("dark-mode") === "on") {
-//   document.body.style.backgroundColor = "#171717";
-// }
 
 document.body.style.opacity = 1;
 

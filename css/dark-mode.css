@@ -43,7 +43,8 @@ nav.dark-mode .login-btn {
 }
 
 .articls.dark-mode a span:first-child,
-.category.dark-mode a span:first-child {
+.category.dark-mode a span:first-child,
+.path.dark-mode .path-courses a {
   color: white !important;
 }
 
@@ -69,13 +70,18 @@ footer.dark-mode div {
 .art.dark-mode .info h3,
 .explore.dark-mode .head-of-explore,
 .explore.dark-mode .tags h2,
-.learning-paths.dark-mode h1 {
+.learning-paths.dark-mode h1,
+.path.dark-mode .head-of-path h1,
+.path.dark-mode .introduction-and-overview h2,
+.path.dark-mode .introduction-and-overview h3 {
   color: white;
 }
 
 .art.dark-mode .head-of-art .tags a,
 .art.dark-mode .info p,
-.art.dark-mode .info ul li {
+.art.dark-mode .info ul li,
+.path.dark-mode .introduction-and-overview p,
+.path.dark-mode .introduction-and-overview li {
   color: #d4d4d4;
 }
 

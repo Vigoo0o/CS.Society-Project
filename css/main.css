@@ -10,6 +10,7 @@ body {
   -moz-transition: 0.3s ease-in-out;
   -ms-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
+  background-color: #fafafa;
 }
 
 a {
@@ -100,12 +101,14 @@ a {
 }
 
 .articls .item,
-.category .all-articls .item {
+.category .all-articls .item,
+.path .path-courses a {
   border-bottom: 1px solid #777;
 }
 
 .articls .item span:first-child,
-.category .all-articls .item span:first-child {
+.category .all-articls .item span:first-child,
+.path .path-courses a {
   color: #333;
   font-size: 24px;
 }
@@ -218,7 +221,8 @@ footer div {
 .art .head-of-art h1,
 .explore .head-of-explore h1,
 .category .head h1,
-.learning-paths .head-of-learning-paths h1 {
+.learning-paths .head-of-learning-paths h1,
+.path .head-of-path h1 {
   font-size: 60px;
   font-weight: bold;
 }
@@ -228,7 +232,8 @@ footer div {
 .art .head-of-art .describtion,
 .explore .head-of-explore .describtion,
 .category .head .discription,
-.learning-paths .head-of-learning-paths .description {
+.learning-paths .head-of-learning-paths .description,
+.path .head-of-path p {
   font-size: 20px;
   color: #777;
 }
@@ -262,16 +267,19 @@ footer div {
   }
   .art .head-of-art h1,
   .category .head h1,
-  .learning-paths .head-of-learning-paths h1 {
+  .learning-paths .head-of-learning-paths h1,
+  .path .head-of-path h1 {
     font-size: 35px;
   }
   .art .head-of-art .date-and-auther,
-  .learning-paths .head-of-learning-paths .description {
+  .learning-paths .head-of-learning-paths .description,
+  .path .head-of-path p {
     font-size: 18px !important;
   }
 }
 
-.art .info p {
+.art .info p,
+.path .introduction-and-overview p {
   font-size: 22px;
   line-height: 1.9;
   margin-bottom: 35px;
@@ -287,13 +295,14 @@ footer div {
   color: #dc3545;
 }
 
-.art .info h2 {
+.art .info h2,
+.path .introduction-and-overview h2 {
   font-size: 35px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.art .info h3 {
+.art .info h3 .path .introduction-and-overview h3 {
   font-size: 25px;
   font-weight: 700;
   margin-bottom: 15px;
@@ -331,13 +340,19 @@ footer div {
   width: fit-content;
 }
 
-.art .info ul {
+.art .info ul,
+.path .introduction-and-overview ol {
   margin-bottom: 40px;
 }
 
-.art .info ul li {
+.art .info ul li,
+.path .introduction-and-overview ol li {
   font-size: 22px;
   line-height: 1.8;
+  font-weight: 600;
+}
+.path .introduction-and-overview ol li + p {
+  font-size: 17px;
 }
 
 .art .info ul li {
@@ -346,7 +361,8 @@ footer div {
 }
 
 @media (max-width: 768px) {
-  .art .info h2 {
+  .art .info h2,
+  .path .introduction-and-overview h2 {
     font-size: 32px;
   }
   .art .info p {
@@ -441,13 +457,11 @@ footer div {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   box-shadow: rgba(21, 28, 43, 0.07) 0px 3px 13px 0px;
+  height: 310px;
 }
 
 .learning-paths .paths .path .image img {
   max-width: 100%;
-}
-
-.learning-paths .paths .path .description {
 }
 
 .learning-paths .paths .path .description h2 {

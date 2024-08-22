@@ -23,4 +23,5 @@ $(document).ready(function () {
   updateArticlesCount("webDevArts", ".all-articls a.webDev");
   updateArticlesCount("cssArts", ".all-articls a.css");
   updateArticlesCount("careerArts", ".all-articls a.career");
+  updateArticlesCount("accessabilityArts", ".all-articls a.accessability");
 });

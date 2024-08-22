@@ -15,4 +15,8 @@ $(document).ready(function () {
   updateElementTextFromStorage("webDevArts", ".explore .tags .webDev span");
   updateElementTextFromStorage("cssArts", ".explore .tags .css span");
   updateElementTextFromStorage("careerArts", ".explore .tags .career span");
+  updateElementTextFromStorage(
+    "accessabilityArts",
+    ".explore .tags .accessability span"
+  );
 });
