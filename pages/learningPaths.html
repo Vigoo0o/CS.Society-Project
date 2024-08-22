@@ -25,7 +25,7 @@
     <!-- Start Navbar -->
     <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand" href="index.html">&#60;\&#62;</a>
+        <a class="navbar-brand" href="../index.html">&#60;\&#62;</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -41,7 +41,9 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
+              <a class="nav-link" aria-current="page" href="../index.html"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="./learningPaths.html"
@@ -73,14 +75,15 @@
           </div>
         </div>
         <div class="tablist mt-5 d-flex flex-wrap">
-          <span class="item active p-3">All</span>
-          <span class="item p-3"> Web </span>
-          <span class="item p-3"> Cyber Security </span>
-          <span class="item p-3"> OS </span>
-          <span class="item p-3"> Networks </span>
+          <!-- data-name -> is a coustome atr -->
+          <span class="item active p-3" data-list=".all">All</span>
+          <span class="item p-3" data-list=".web"> Web </span>
+          <span class="item p-3" data-list=".security"> Cyber Security </span>
+          <span class="item p-3" data-list=".os"> OS </span>
+          <span class="item p-3" data-list=".network"> Networks </span>
         </div>
         <div class="paths mt-5 d-grid gap-3">
-          <div class="path">
+          <div class="path all web">
             <div class="image">
               <img src="../image/web-path.svg" alt="" />
             </div>
@@ -89,7 +92,7 @@
               <p>A pathway to web application security</p>
             </div>
           </div>
-          <div class="path">
+          <div class="path all security">
             <div class="image">
               <img src="../image/introtocybersecurity-path.svg" alt="" />
             </div>
@@ -101,13 +104,25 @@
               </p>
             </div>
           </div>
-          <div class="path">
+          <div class="path all os">
             <div class="image">
               <img src="../image/os-path.svg" alt="" />
             </div>
             <div class="description p-3">
               <h2>Linux Fundamentals</h2>
               <p>Learning the fundamentals of Linux</p>
+            </div>
+          </div>
+          <div class="path all security">
+            <div class="image">
+              <img src="../image/presecurity.svg" alt="" />
+            </div>
+            <div class="description p-3">
+              <h2>Pre Security</h2>
+              <p>
+                Before hacking something, you first need to understand the
+                basics
+              </p>
             </div>
           </div>
         </div>
@@ -128,6 +143,6 @@
     <!-- Jquery File (Minified) -->
     <script src="../js/jquery.all.min.js"></script>
     <script src="../js/main.js"></script>
-    <script src="../js/home.js"></script>
+    <script src="../js/learningPaths.js"></script>
   </body>
 </html>
