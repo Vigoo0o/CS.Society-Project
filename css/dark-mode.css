@@ -73,7 +73,8 @@ footer.dark-mode div {
 .learning-paths.dark-mode h1,
 .path.dark-mode .head-of-path h1,
 .path.dark-mode .introduction-and-overview h2,
-.path.dark-mode .introduction-and-overview h3 {
+.path.dark-mode .introduction-and-overview h3,
+.art.dark-mode .info h4 {
   color: white;
 }
 
@@ -81,7 +82,8 @@ footer.dark-mode div {
 .art.dark-mode .info p,
 .art.dark-mode .info ul li,
 .path.dark-mode .introduction-and-overview p,
-.path.dark-mode .introduction-and-overview li {
+.path.dark-mode .introduction-and-overview li,
+.art.dark-mode .info li {
   color: #d4d4d4;
 }
 
@@ -142,8 +144,19 @@ footer.dark-mode div {
   color: white;
 }
 
-.learning-paths.dark-mode .tablist .item {
+.learning-paths.dark-mode .tablist .item.active {
+  background-color: transparent;
+}
+
+.learning-paths.dark-mode .tablist .item:hover {
+  background-color: transparent;
 }
 
 .learning-paths.dark-mode .tablist .item.active {
 }
+.learning-paths.dark-mode .paths .path {
+  background-color: #333;
+  color: white;
+}
+
+/* */
